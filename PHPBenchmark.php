@@ -162,8 +162,8 @@ function PHPB_test($PHPB_1Fxn,$PHPB_2Fxn,$PHPB_emptyFxn,$PHPB_printF=FALSE){
 	$PHPB_minRun2T = $PHPB_minBatch2T / $PHPB_per2N;
 	
 	// print some information about the results
-	$PHPB_display("FXN #1",$PHPB_minRun1T);echo ", adjusted to eliminate testing overhead\n";
-	$PHPB_display("FXN #2",$PHPB_minRun2T);echo ", adjusted to eliminate testing overhead\n";
+	$PHPB_display("FXN #1",$PHPB_minRun1T);$PHPB_echo(", adjusted to eliminate testing overhead\n");
+	$PHPB_display("FXN #2",$PHPB_minRun2T);$PHPB_echo(", adjusted to eliminate testing overhead\n");
 	
 	$PHPB_echo("\nRESULT\n");
 	if ($PHPB_minRun1T === 0 || $PHPB_minRun2T === 0){
